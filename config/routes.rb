@@ -1,4 +1,10 @@
 Tategaki::Application.routes.draw do
+  get "news/index"
+
+  get "about/index"
+
+  get "top/index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
