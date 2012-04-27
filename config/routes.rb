@@ -1,9 +1,8 @@
 Tategaki::Application.routes.draw do
-  get "news/index"
-
-  get "about/index"
-
-  get "top/index"
+  # static
+  root :to => "top#index"
+  get '/about' => "about#index"
+  get '/news'  => "news#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
