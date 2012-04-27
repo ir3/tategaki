@@ -11,3 +11,56 @@
  *= require_self
  *= require_tree .
 */
+* {
+  margin: 0;
+  padding: 0;
+}
+#header {
+  width: auto;
+  padding: 15px;
+}
+#header h1 {
+  width: auto;
+}
+#footer {
+  width: auto;
+  padding: 15px;
+  text-align: right;
+}
+#wrapper {
+  width: 100%
+}
+div.clear {
+  clear: both;
+}
+#menu {
+  width: 200px;
+  float: left;
+}
+#menu ul {
+  width: 100%;
+  list-style: none;
+}
+#menu ul li {
+  float: left;
+  width: 100%;
+}
+#menu ul li a {
+  padding: 15px 0 15px 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  background-color: #4499ff;
+  font-size: 150%;
+  font-weight: bold;
+  color: gray;
+}
+#menu ul li a:hover {
+  background-color: #77ccff;
+  color: gray;
+}
+#contents {
+  float: left;
+  padding: 15px;
+}
