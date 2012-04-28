@@ -1,10 +1,11 @@
 Tategaki::Application.routes.draw do
-  resources :posts
 
   # static
-  root :to => "top#index"
+  root :to     => "top#index"
   get '/about' => "about#index"
   get '/news'  => "news#index"
+
+  resources :posts
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
