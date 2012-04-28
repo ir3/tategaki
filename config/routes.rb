@@ -1,4 +1,6 @@
 Tategaki::Application.routes.draw do
+  resources :posts
+
   # static
   root :to => "top#index"
   get '/about' => "about#index"
