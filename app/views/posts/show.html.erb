@@ -4,11 +4,15 @@
   <b>Title:</b>
   <%= @post.title %>
 </p>
-
-<p>
-  <b>Body:</b>
-  <%= @post.body %>
-</p>
+<div class="tate-area">
+  <% block = @post.body.split(/ /) %>
+  <div class="tate-line">
+    <%= block[0] %>
+  </div>
+  <div class="tate-line">
+    <%= block[1] %>
+  </div>
+</div>
 
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
