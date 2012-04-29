@@ -801,8 +801,16 @@
 }
 
 @media (min-width: 980px) {
+nav {
+	margin-top:60px;
+}
   .nav-collapse.collapse {
     height: auto !important;
     overflow: visible !important;
   }
+}
+
+#aaa{
+  margin: 0 auto;  
+  width: 100%;  
 }

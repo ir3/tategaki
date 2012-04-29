@@ -15,43 +15,13 @@
 <%= stylesheet_link_tag "site" %>
 <%= stylesheet_link_tag "bootstrap" %>
 <%= stylesheet_link_tag "bootstrap-responsive" %>
-<%= stylesheet_link_tag "desgin" %>
-
 
 <%= javascript_include_tag "jquery-1.7.2.min" %>
 <%= javascript_include_tag "jquery.mousewheel" %>
 <%= javascript_include_tag "bootstrap.min" %>
 <%= javascript_include_tag "metro" %>
-
-<%= csrf_meta_tags %>
-
-    <style type="text/css">
-        body {
-            background: #004050;
-        }
-        .metro {
-           
-            overflow: hidden;
-        }
-        .metro-section {
-            width: 810px !important;
-        }
-        #section1 {
-            width: 320px !important;
-        }
-        .metro-sections {
-            width: 10000px !important;
-        }
-        .start {
-            position: absolute;
-            top: 60px;
-        }
-        #demo {
-        }
-    </style>
-    
+<%= csrf_meta_tags %>    
 </head>
-
 <body id="toppage">
 <header>
     <%= render :partial => 'layouts/header' %>
@@ -66,7 +36,7 @@
   
   
 <footer>
-    <%= render :partial => 'layouts/footer' %>  
+<%= render :partial => 'layouts/footer' %>  
 </footer>
       <script type="text/javascript">
         $(function(){
