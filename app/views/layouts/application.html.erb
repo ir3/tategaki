@@ -1,24 +1,83 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
-<head >
-  <title>Tategaki</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>たてがき言葉 | 俳句や短歌、川柳を投稿しよう！</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<meta name="copyright" content="">
+<meta name="author" content="">
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+<%= stylesheet_link_tag "metro" %>
+<%= stylesheet_link_tag "site" %>
+<%= stylesheet_link_tag "bootstrap" %>
+<%= stylesheet_link_tag "bootstrap-responsive" %>
+<%= stylesheet_link_tag "desgin" %>
+
+
+<%= javascript_include_tag "jquery-1.7.2.min" %>
+<%= javascript_include_tag "jquery.mousewheel" %>
+<%= javascript_include_tag "bootstrap.min" %>
+<%= javascript_include_tag "metro" %>
+
+<%= csrf_meta_tags %>
+
+    <style type="text/css">
+        body {
+            background: #004050;
+        }
+        .metro {
+           
+            overflow: hidden;
+        }
+        .metro-section {
+            width: 810px !important;
+        }
+        #section1 {
+            width: 320px !important;
+        }
+        .metro-sections {
+            width: 10000px !important;
+        }
+        .start {
+            position: absolute;
+            top: 60px;
+        }
+        #demo {
+        }
+    </style>
+    
 </head>
-<body>
-  <div id='header'>
+
+<body id="toppage">
+<header>
     <%= render :partial => 'layouts/header' %>
-  </div>
-  <div id='wrapper'>
-    <div id='menu'>
+</header>
+  <div class="container">
+	<div id="menu">
       <%= render :partial => 'layouts/menu' %>
     </div>
-    <div id='contents'><%= yield %></div>
-    <div class='clear'></div>
-  </div>
-  <div id='footer'>
-    <%= render :partial => 'layouts/footer' %>
-  </div>
+  <div id='contents'><%= yield %></div>
+  <div class='clear'></div>
+</div>
+  
+  
+<footer>
+    <%= render :partial => 'layouts/footer' %>  
+</footer>
+      <script type="text/javascript">
+        $(function(){
+            window.prettyPrint && prettyPrint();
+        })
+
+        $(".metro").metro();
+
+    </script>
 </body>
+
+
+
 </html>
