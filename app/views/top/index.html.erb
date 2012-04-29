@@ -1,2 +1,56 @@
-<h2>縦書き広場</h1>
-<p>縦書きで表示してみよう</p>
+
+<%= stylesheet_link_tag "metro" %>
+<%= stylesheet_link_tag "site" %>
+<%= stylesheet_link_tag "bootstrap" %>
+<%= stylesheet_link_tag "bootstrap-responsive" %>
+<%= stylesheet_link_tag "desgin" %>
+
+
+<%= javascript_include_tag "jquery-1.7.2.min" %>
+<%= javascript_include_tag "jquery.mousewheel" %>
+<%= javascript_include_tag "bootstrap.min" %>
+<%= javascript_include_tag "metro" %>
+
+
+    <style type="text/css">
+        body {
+            background: #004050;
+        }
+        .metro {
+
+            overflow: hidden;
+        }
+        .metro-section {
+            width: 810px !important;
+        }
+        #section1 {
+            width: 320px !important;
+        }
+        .metro-sections {
+            width: 10000px !important;
+        }
+        .start {
+            position: absolute;
+            top: 60px;
+        }
+        #demo {
+        }
+    </style>
+
+
+  <div class="container">
+    <div id="menu">
+      <%= render :partial => 'layouts/menu' %>
+    </div>
+  <div id='contents'><%= yield %></div>
+  <div class='clear'></div>
+  </div>
+たてがき言葉 | 俳句や短歌、川柳を投稿しよう！
+      <script type="text/javascript">
+        $(function(){
+            window.prettyPrint && prettyPrint();
+        })
+
+        $(".metro").metro();
+
+    </script>
