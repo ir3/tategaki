@@ -104,7 +104,7 @@ textarea {
   background-color: #0064cd !important;
 }
 .bg-color-green {
-  background-color: #01a31c !important;
+  background-color: #99e7c3 !important;
 }
 .bg-color-greenDark {
   background-color: #005200 !important;
@@ -267,18 +267,86 @@ html[xmlns] .clearfix {
   font-family: Segoe UI, Tahoma, Arial, Verdana, sans-serif;
 }
 .metro .metro-sections .metro-section .tile .tile-icon-large {
-  margin-top: 10px;
-  margin-left: 0px;
+  background-repeat: no-repeat;
   display: table-cell;
   vertical-align: middle !important;
   text-align: center;
-  width: 150px;
-  padding-top: 20px;
+  width: 170px;
+  height:160px;
+  padding-left: 10px;
+  z-index:2;
 }
-.metro .metro-sections .metro-section .tile .tile-icon-large img {
-  width: 96px;
-  height: 96px;
+.img01{
+  background-image: url(/assets/sample.png?body=1);
+  background-repeat: no-repeat;
+  display: table-cell;
+  vertical-align: middle !important;
+  text-align: center;
+  width: 170px;
+  height:160px;
+  padding-left: 10px;
+  z-index:2;
 }
+.img02{
+  background-image: url(/assets/sample2.png?body=1);
+  background-repeat: no-repeat;
+  display: table-cell;
+  vertical-align: middle !important;
+  text-align: center;
+  width: 170px;
+  height:160px;
+  padding-left: 10px;
+  z-index:2;
+}
+.img03{
+  background-image: url(/assets/sample3.png?body=1);
+  background-repeat: no-repeat;
+  display: table-cell;
+  vertical-align: middle !important;
+  text-align: center;
+  width: 170px;
+  height:160px;
+  padding-left: 10px;
+  z-index:2;
+}
+.img04{
+  background-image: url(/assets/sample4.png?body=1);
+  background-repeat: no-repeat;
+  display: table-cell;
+  vertical-align: middle !important;
+  text-align: center;
+  width: 170px;
+  height:160px;
+  padding-left: 10px;
+  z-index:2;
+}
+.img05{
+  background-image: url(/assets/sample5.png?body=1);
+  background-repeat: no-repeat;
+  display: table-cell;
+  vertical-align: middle !important;
+  text-align: center;
+  width: 170px;
+  height:160px;
+  padding-left: 10px;
+  z-index:2;
+}
+.img06{
+  background-image: url(/assets/sample6.png?body=1);
+  background-repeat: no-repeat;
+  display: table-cell;
+  vertical-align: middle !important;
+  text-align: center;
+  width: 170px;
+  height:160px;
+  padding-left: 10px;
+  z-index:2;
+}
+.metro .metro-sections .metro-section .tile .tile-icon-large span{
+padding-top:20px;
+ z-index:100;
+}
+
 .metro .metro-sections .metro-section .tile .tile-icon-cover {
   margin-top: 20px;
   margin-left: 0px;
@@ -1506,6 +1574,8 @@ html[xmlns] .clearfix {
 	-webkit-writing-mode: vertical-rl;
 	font-family:	"HiraMinProN-W3", "@ＭＳ 明朝", serif, sans-serif;
 	writing-mode:	vertical-rl;
+	z-index:100;
+	color:#000;
 }
 nav{
 	margin-left:-20px;
@@ -1527,10 +1597,40 @@ nav li{
 	margin:0 auto;
 }
 
+#titlelogo{
+	width:320px;
+	text-align:center;
+	margin-bottom:10px;
+}
+
 nav li a:hover{
 	background-image: url(/assets/flowerbtnhover.png?body=1);
     background-repeat: no-repeat;
 	padding:5px;
 	padding-left:30px;
+}
+#discription{
+	font-size:14px;
+}
+.metro{
+	margin:o auto;
+}
+#section1 {
+  width: 320px !important;
+}
+.start {
+ position: absolute;
+ top: 60px;
+ }
+footer{
+	padding:30px;
+}
+
+.start02{
+	text-align:center;
+	}
 	
+#aaa{
+	margin:0 auto;
+	text-align:center;
 }
