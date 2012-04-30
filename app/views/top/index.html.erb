@@ -1,101 +1,70 @@
-
-<%= stylesheet_link_tag "metro" %>
-<%= stylesheet_link_tag "site" %>
-<%= stylesheet_link_tag "bootstrap" %>
-<%= stylesheet_link_tag "bootstrap-responsive" %>
-<%= stylesheet_link_tag "desgin" %>
-
-
-<%= javascript_include_tag "jquery-1.7.2.min" %>
-<%= javascript_include_tag "jquery.mousewheel" %>
-<%= javascript_include_tag "bootstrap.min" %>
-<%= javascript_include_tag "metro" %>
-
-
-    <style type="text/css">
-        body {
-            background: #004050;
-        }
-        .metro {
-
-            overflow: hidden;
-        }
-        .metro-section {
-            width: 810px !important;
-        }
-        #section1 {
-            width: 320px !important;
-        }
-        .metro-sections {
-            width: 10000px !important;
-        }
-        .start {
-            position: absolute;
-            top: 60px;
-        }
-        #demo {
-        }
-    </style>
-
-
-  <div class="container">
-  <div id='contents'><%= yield %></div>
-  <div class='clear'></div>
-  </div>
+<script type="text/javascript">
+   /* パラメータの設定 */
+   var params ={ 'tategaki' : { 'fontsize' : '14px' ,
+                'chars' : 28 , 
+                'lineInterval' : 0.6 , 
+                'auto' : true
+             } 
+   }; 
+   /* 初期化 & コンバート */
+   h2vconvert.init( params ); 
+</script>
 たてがき言葉 | 俳句や短歌、川柳を投稿しよう！
-<div id="titlelogo"><img src="../assets/tategakilogo.png?body=1" width="100" height="135"></div>
+<div id="titlelogo"><img src="../assets/tategakilogo.png?body=1" width="100" height="135"></div> 
+<div  class="metro">
+  <h1 class="start"></h1>
+  <div class="metro-sections"> 
+    <div class="metro-section" id="section1"> 
+      <a data-next="#section3" data-prior="#section2" href="#" class="next-section"></a> 
+      <div class="tile">
+        <div class="tile-icon-large img01">
+          <span id="tate">朝顔に</span>
+          <span id="tate">　　つるべとられて</span>
+          <span id="tate">　　　　もらい水</span>
+        </div>
+      </div>
+      <div class="tile bg-color-orange">
+        <div class="tile-icon-large img02">
+           <span class="tate">秋深き</span>
+           <span class="tate">　隣は何を</span>
+           <span class="tate">　　する人ぞ</span>
+        </div>
+      </div>
 
-        <div  class="metro">
-            <h1 class="start"></h1>
-            <div class="metro-sections">
-
-                <div class="metro-section" id="section1">
-
-                    <a data-next="#section3" data-prior="#section2" href="#" class="next-section"></a>
-
-                       <div class="tile">
-                        <div class="tile-icon-large img01">
-                             <span class="tate">朝顔に　つるべとられて　もらい水</span>
-                        </div>
-                    </div>
-                       <div class="tile bg-color-orange">
-                        <div class="tile-icon-large img02">
-                             <span class="tate">秋深き　隣は何を　する人ぞ</span>
-                        </div>
-                    </div>
-
-                    <div class="tile bg-color-pink">
-                        <div class="tile-icon-large img03">
-                             <span class="tate">秋深き　隣は何を　する人ぞ</span>
-                        </div>
-                    </div>
-                    <div class="tile bg-color-yellow">
-                        <div class="tile-icon-large  img04">
-                             <span class="tate">赤とんぼ　筑波に雲も　なかりけり</span>
-                        </div>
-                    </div>
-                        <div class="tile bg-color-green">
-                        <div class="tile-icon-large  img05">
-                             <span class="tate">秋空を　二つに断てり　椎大樹</span>
-                        </div>
-                    </div>
-                     <div class="tile bg-color-purple">
-                        <div class="tile-icon-large img06">
-                             <span class="tate">朝顔に　つるべとられて　もらい水</span>
-                        </div>
-
-                    </div>
-
-
-
-            </div>
-
-            </div>
-        <script type="text/javascript">
-        $(function(){
-            window.prettyPrint && prettyPrint();
-        })
-
-        $(".metro").metro();
-
-    </script>
+      <div class="tile bg-color-pink">
+        <div class="tile-icon-large img03">
+           <span class="tate">秋深き</span>
+           <span class="tate">　隣は何を</span>
+           <span class="tate">　　する人ぞ</span>
+        </div>
+      </div>
+      <div class="tile bg-color-yellow">
+        <div class="tile-icon-large  img04">
+           <span class="tate">赤とんぼ</span>
+           <span class="tate">　筑波に雲も</span>
+           <span class="tate">　　なかりけり</span>
+        </div>
+      </div>
+        <div class="tile bg-color-green">
+        <div class="tile-icon-large  img05">
+           <span class="tate">秋空を</span>
+           <span class="tate">　二つに断てり</span>
+           <span class="tate">　　椎大樹</span>
+        </div>
+      </div>
+      <div class="tile bg-color-purple">
+        <div class="tile-icon-large img06">
+          <span id="tate">朝顔に</span>
+          <span id="tate">　　つるべとられて</span>
+          <span id="tate">　　　　もらい水</span>
+        </div> 
+      </div>
+    </div> 
+  </div>
+</div>
+<script type="text/javascript">
+  $(function(){
+    window.prettyPrint && prettyPrint();
+  }) 
+  $(".metro").metro(); 
+</script>

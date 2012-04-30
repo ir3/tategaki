@@ -22,7 +22,9 @@ nav,
 section {
   display: block;
 }
-audio, canvas, video {
+audio,
+canvas,
+video {
   display: inline-block;
   *display: inline;
   *zoom: 1;
@@ -343,8 +345,17 @@ html[xmlns] .clearfix {
   z-index:2;
 }
 .metro .metro-sections .metro-section .tile .tile-icon-large span{
-padding-top:20px;
- z-index:100;
+  padding-top:20px;
+  z-index:100;
+ float:right;
+ width:1.05em;
+ line-height:1.05em;
+ margin-right:0.3em;
+ margin-left:0.3em;
+ padding-bottom:0.2em;
+ font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','Hiragino Kaku Gothic Pro W3' , 'ＭＳ ゴシック','MS Gothic' ,monospace;
+ word-wrap:break-word;
+ direction:ltr;
 }
 
 .metro .metro-sections .metro-section .tile .tile-icon-cover {
@@ -1551,17 +1562,17 @@ padding-top:20px;
 
 
 #toppage{
-	    background-image: url(/assets/topback.jpeg?body=1);
+      background-image: url(/assets/topback.jpeg?body=1);
 
 }
 .menu{
-	display:block;
-	margin:10px;
+  display:block;
+  margin:10px;
 }
 
 .menu li{
-	float:right;
-	list-style:none;
+  float:right;
+  list-style:none;
 }
 .menu li:after{
     clear: both;
@@ -1570,50 +1581,43 @@ padding-top:20px;
     height: 0;
 }
 
-.tate{
-	-webkit-writing-mode: vertical-rl;
-	font-family:	"HiraMinProN-W3", "@ＭＳ 明朝", serif, sans-serif;
-	writing-mode:	vertical-rl;
-	z-index:100;
-	color:#000;
-}
 nav{
-	margin-left:-20px;
+  margin-left:-20px;
 }
 nav li{
-	list-style:none;
-	display:inline-block;
+  list-style:none;
+  display:inline-block;
 }
 
 nav li{
     background-image: url(/assets/backbtn.png?body=1);
     background-repeat: no-repeat;
-	width:150px;
-	height:44px;
-	background-size:150px 44px;	
-	padding-top:10px;
-	text-align:center;
-	font-size:16px;
-	margin:0 auto;
+  width:150px;
+  height:44px;
+  background-size:150px 44px; 
+  padding-top:10px;
+  text-align:center;
+  font-size:16px;
+  margin:0 auto;
 }
 
 #titlelogo{
-	width:320px;
-	text-align:center;
-	margin-bottom:10px;
+  width:320px;
+  text-align:center;
+  margin-bottom:10px;
 }
 
 nav li a:hover{
-	background-image: url(/assets/flowerbtnhover.png?body=1);
+  background-image: url(/assets/flowerbtnhover.png?body=1);
     background-repeat: no-repeat;
-	padding:5px;
-	padding-left:30px;
+  padding:5px;
+  padding-left:30px;
 }
 #discription{
-	font-size:14px;
+  font-size:14px;
 }
 .metro{
-	margin:o auto;
+  margin:o auto;
 }
 #section1 {
   width: 320px !important;
@@ -1623,14 +1627,14 @@ nav li a:hover{
  top: 60px;
  }
 footer{
-	padding:30px;
+  padding:30px;
 }
 
 .start02{
-	text-align:center;
-	}
-	
+  text-align:center;
+  }
+  
 #aaa{
-	margin:0 auto;
-	text-align:center;
+  margin:0 auto;
+  text-align:center;
 }

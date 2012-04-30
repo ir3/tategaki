@@ -18,7 +18,6 @@ div.tate-area a{
  color:#119;
  text-decoration:none;
 }
-
 div.tate-line{
  float:right;
  width:1.05em;
@@ -33,7 +32,6 @@ div.tate-line{
 .tate-line font,strong,h1,h2,h3,h4,h5{
  line-height:1.05em;
 }
-
 .tate-line span.tate-kuto{
  display:block;
  width:0.4em;
