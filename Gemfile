@@ -7,9 +7,7 @@ gem 'json', '1.6.6'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 #
-group :test, :development do
   gem 'sqlite3'
-end
 
 group :production do
   gem 'pg'
@@ -46,3 +44,7 @@ gem 'rspec-rails'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+group :development, :test do
+#  gem 'ruby-debug-base19x', :require => 'ruby-debug'
+  gem 'pry-rails'
+end
