@@ -1,25 +1,22 @@
-<h1>Listing posts</h1>
+<h1>投稿一覧</h1>
 
-<table>
+<table width='100%' border='1'>
   <tr>
-    <th>Title</th>
-    <th>Body</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>No.</th>
+    <th>縦書</th>
+    <th>タイトル</th>
+    <th>本文</th>
+    <th>投稿日</th>
   </tr>
 
-<% @posts.each do |post| %>
-  <tr>
+<% stripes = [ 'aliceblue', '#d3d9bf' ] %>
+<% @posts.each_with_index do |post, i| %>
+  <tr bgcolor=<%= stripes.push(stripes[0]).shift %>>
+    <td align='middle'><%= i+1 %></td>
+    <td><%= link_to('縦書', "posts/#{i+1}")%></td>
     <td><%= post.title %></td>
     <td><%= post.body %></td>
-    <td><%= link_to 'Show', post %></td>
-    <td><%= link_to 'Edit', edit_post_path(post) %></td>
-    <td><%= link_to 'Destroy', post, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= post.created_at.strftime("%Y/%m/%d %H:%M:%S") %></td>
   </tr>
 <% end %>
 </table>
-
-<br />
-
-<%= link_to 'New Post', new_post_path %>

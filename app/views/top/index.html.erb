@@ -10,89 +10,53 @@
        <% if i == 0 %>
         <div class="tile">
           <div class="tile-icon-large img01">
-          <% if post %>
             <% post.body.split(/ /).each_with_index do |block,i| %>
               <span> <%= '　'*i + block %> </span>
             <% end %>
-          <% else %>
-            <span id="tate">赤い椿</span>
-            <span id="tate">　白い椿と</span>
-            <span id="tate">　　落ちにけり</span>
-          <% end %>
           </div>
         </div>
        <% elsif i == 1 %>
         <div class="tile bg-color-orange">
           <div class="tile-icon-large img02">
-          <% if post %>
             <% post.body.split(/ /).each_with_index do |block,i| %>
               <span> <%= '　'*i + block %> </span>
             <% end %>
-          <% else %>
-            <span id="tate">朝顔に</span>
-            <span id="tate">　つるべとられて</span>
-            <span id="tate">　　もらい水</span>
-          <% end %>
           </div>
         </div>
 
        <% elsif i == 2 %>
        <div class="tile bg-color-pink">
         <div class="tile-icon-large img03">
-          <% if post %>
             <% post.body.split(/ /).each_with_index do |block,i| %>
               <span> <%= '　'*i + block %> </span>
             <% end %>
-          <% else %>
-             <span class="tate">秋深き</span>
-             <span class="tate">　隣は何を</span>
-             <span class="tate">　　する人ぞ</span>
-          <% end %>
         </div>
        </div>
 
        <% elsif i == 3 %>
        <div class="tile bg-color-yellow">
         <div class="tile-icon-large  img04">
-          <% if post %>
             <% post.body.split(/ /).each_with_index do |block,i| %>
               <span> <%= '　'*i + block %> </span>
             <% end %>
-          <% else %>
-             <span class="tate">赤とんぼ</span>
-             <span class="tate">　筑波に雲も</span>
-             <span class="tate">　　なかりけり</span>
-          <% end %>
         </div>
        </div>
 
        <% elsif i == 4 %>
        <div class="tile bg-color-green">
         <div class="tile-icon-large  img05">
-          <% if post %>
             <% post.body.split(/ /).each_with_index do |block,i| %>
               <span> <%= '　'*i + block %> </span>
             <% end %>
-          <% else %>
-             <span class="tate">秋空を</span>
-             <span class="tate">　二つに断てり</span>
-             <span class="tate">　　椎大樹</span>
-          <% end %>
         </div>
        </div>
 
        <% elsif i == 5 %>
        <div class="tile bg-color-purple">
         <div class="tile-icon-large img06">
-          <% if post %>
             <% post.body.split(/ /).each_with_index do |block,i| %>
               <span> <%= '　'*i + block %> </span>
             <% end %>
-          <% else %>
-            <span id="tate">朝顔に</span>
-            <span id="tate">　つるべとられて</span>
-            <span id="tate">　　もらい水</span>
-          <% end %>
         </div>
        </div>
       <% end %>

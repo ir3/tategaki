@@ -23,52 +23,50 @@
 <%= javascript_include_tag "bootstrap.min" %>
 <%= javascript_include_tag "metro" %>
 <link rel="Shortcut Icon" type="image/x-icon" href="../assets/favicon.ico?body=1">
-<link rel="icon" type="image/gif" href="../assets/favicon.gif?body=1"> 
+<link rel="icon" type="image/gif" href="../assets/favicon.gif?body=1">
 <style type="text/css">
   body {
-      background: #004050;
+    background: #004050;
   }
   .metro {
-      overflow: hidden;
+    overflow: hidden;
   }
   .metro-section {
-      width: 810px !important;
+    width: 810px !important;
   }
   #section1 {
-      width: 320px !important;
+    width: 320px !important;
   }
   .metro-sections {
-      width: 10000px !important;
+    width: 10000px !important;
   }
   .start {
-      position: absolute;
-      top: 60px;
-  }
-  #demo {
+    position: absolute;
+    top: 60px;
   }
 </style>
 </head>
 
 <body id="toppage">
 <header>
-    <%= render :partial => 'layouts/header' %>
+  <%= render :partial => 'layouts/header' %>
 </header>
  <div class="container">
    <div id="menu">
       <%= render :partial => 'layouts/menu' %>
-    </div>
-  <div id='contents'><%= yield %></div>
+   </div>
+   <div id='contents'><%= yield %></div>
   <div class='clear'></div>
 </div>
 
 <footer>
-    <%= render :partial => 'layouts/footer' %>
+  <%= render :partial => 'layouts/footer' %>
 </footer>
-    <script type="text/javascript">
-        $(function(){
-            window.prettyPrint && prettyPrint();
-        })
-        $(".metro").metro();
-    </script>
+  <script type="text/javascript">
+    $(function(){
+      window.prettyPrint && prettyPrint();
+    })
+    $(".metro").metro();
+  </script>
 </body>
 </html>
