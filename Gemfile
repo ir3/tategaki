@@ -3,6 +3,10 @@ source 'https://rubygems.org'
 #gem 'rails', '3.2.1'
 gem 'rails'
 gem 'json', '1.6.6'
+gem 'jquery-rails'
+gem 'nokogiri'
+gem 'i18n_generators'
+
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -14,7 +18,6 @@ end
 group :production do
   gem 'pg'
 end
-
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -28,9 +31,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
 
-gem 'rspec-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -49,4 +50,5 @@ gem 'rspec-rails'
 group :development, :test do
 #  gem 'ruby-debug-base19x', :require => 'ruby-debug'
   gem 'pry-rails'
+  gem 'rspec-rails'
 end
